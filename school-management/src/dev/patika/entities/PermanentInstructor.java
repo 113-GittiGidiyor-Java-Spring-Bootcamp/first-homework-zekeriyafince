@@ -8,7 +8,7 @@ import java.util.List;
 @Entity
 public class PermanentInstructor extends Instructor{
 
-    private int salary;
+    private double salary;
 
     public PermanentInstructor() {
     }
@@ -18,7 +18,7 @@ public class PermanentInstructor extends Instructor{
         this.salary = fixedSalary;
     }
 
-    public int getFixedSalary() {
+    public double getFixedSalary() {
         return salary;
     }
 
@@ -29,6 +29,7 @@ public class PermanentInstructor extends Instructor{
     @Override
     public String toString() {
         return "PermanentInstructor{" +
+                super.toString() +
                 "fixedSalary=" + salary +
                 '}';
     }

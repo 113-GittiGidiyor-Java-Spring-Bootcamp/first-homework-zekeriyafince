@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class VisitingResearcher extends Instructor{
+public class VisitingResearcher extends Instructor {
 
     private int salary;
 
@@ -29,6 +29,7 @@ public class VisitingResearcher extends Instructor{
     @Override
     public String toString() {
         return "VisitingResearcher{" +
+                super.toString() +
                 "hourlySalary=" + salary +
                 '}';
     }
